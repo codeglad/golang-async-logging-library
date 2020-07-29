@@ -51,8 +51,8 @@ func (al Alog) Start() {
 		case <-al.shutdownCh:
 			wg.Wait()
 			al.shutdown()
-			break
 		}
+		break
 	}
 }
 
